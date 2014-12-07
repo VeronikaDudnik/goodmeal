@@ -10,13 +10,21 @@
     <div class="overlay"></div>
     <div class="meal-wrapper">
         <div class="today-meal">
-            <div class="header-meal">Here is your meal</div>
-            <div class="day-summary"><span>{{meal}}</span><span>{{mealGram}}</span></div>
+            <div class="header-meal">Today's meal</div>
+            <ul class="today-meal-list">
+                <li class="meal-item">
+                    <div class="day-summary">
+                        <div class="meal-number">1</div>
+                        <div class="meal-name ellipsis">{{meal}}</div>
+                        <div class="meal-protein">{{mealProtein}}</div>
+                        <div class="meal-calories">{{mealCalories}}</div>
+                    </div>
+                </li>
+            </ul>
+
         </div>
     </div>
-    <div class="wanna-add-meal">
-        <!--<img src="stylesheets/plus2.png" class="wanna-add-meal-icon">-->
-    </div>
+    <div class="wanna-add-meal"></div>
     <div class="eaten-food">
         <input type="text" ng-model="meal" placeholder="Enter a meal here" class="new-meal">
         <input type="text" ng-model="mealGram" placeholder="grams" class="grams">
